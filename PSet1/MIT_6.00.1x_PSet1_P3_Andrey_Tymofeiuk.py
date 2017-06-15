@@ -17,7 +17,7 @@ longest = 0
 length = 0
 order = 0
 
-#Andrey Tymofeiuk: Using nested loops approach, both for and while loop
+#Andrey Tymofeiuk: Using nested loops approach, both for and while loops
 for el in range(len(s)-2):
     k = 0
     while s[el+k] <= s[el+k+1]:
