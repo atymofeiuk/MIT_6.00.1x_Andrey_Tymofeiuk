@@ -4,7 +4,21 @@ Created on Thu Jun 15 14:00:34 2017
 
 MIT 6.00.1x course on edX.org: PSet3 P4
 
+Task:
+
+Now you will implement the function hangman, which takes one parameter - the 
+secretWord the user is to guess. This starts up an interactive game of Hangman 
+between the user and the computer. Be sure you take advantage of the three 
+helper functions, isWordGuessed, getGuessedWord, and getAvailableLetters, that 
+you've defined in the previous part.
+
 @author: Andrey Tymofeiuk
+
+Important: This code is placed at GitHub to track my progress in programming and
+to show my way of thinking. Also I will be happy if somebody will find my solution
+interesting. But I respect The Honor Code and I ask you to respect it also - please
+don't use this solution to pass the MIT 6.00.1x course.
+
 """
 def hangman(secretWord):
     '''
