@@ -22,6 +22,7 @@ def largest_odd_times(L):
         Returns the largest element of L that occurs an odd number 
         of times in L. If no such element exists, returns None """
     
+    # Andrey Tymofeiuk: Sometimes double mistake leads to peculiar right result
     dict_collect = {}
     list_final = []
     
