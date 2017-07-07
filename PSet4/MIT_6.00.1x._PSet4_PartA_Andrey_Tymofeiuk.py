@@ -5,7 +5,7 @@ MIT 6.00.1x course on edX.org: PSet4 PartA
 
 Task:
     
-In this problem set, you'll implement two versions of a wordgame!
+In this problem set, you'll implement two versions of a wordgame! 
 
 @author: Andrey Tymofeiuk
 
@@ -291,7 +291,6 @@ def playGame(wordList):
  
     2) When done playing the hand, repeat from step 1    
     """
-    # TO DO ... <-- Remove this comment when you code this function
     steps = 0
     command = 'aurora'
     
