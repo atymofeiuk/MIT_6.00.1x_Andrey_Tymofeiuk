@@ -102,6 +102,7 @@ class Message(object):
         Returns: a dictionary mapping a letter (string) to 
                  another letter (string). 
         '''
+        # Andrey Tymofeiuk: Implemented by me
         dict = {}
         small_original = string.ascii_lowercase
         big_original = string.ascii_uppercase
@@ -127,6 +128,7 @@ class Message(object):
         Returns: the message text (string) in which every character is shifted
              down the alphabet by the input shift
         '''
+        # Andrey Tymofeiuk: Implemented by me
         dict = Message.build_shift_dict(self,shift)
         keys = dict.keys()
         encripted_message = ''
@@ -157,6 +159,7 @@ class PlaintextMessage(Message):
         Hint: consider using the parent class constructor so less 
         code is repeated
         '''
+        # Andrey Tymofeiuk: Implemented by me
         self.message_text = text
         self.valid_words = load_words('words.txt')
         self.shift = shift
@@ -170,6 +173,7 @@ class PlaintextMessage(Message):
         
         Returns: self.shift
         '''
+        # Andrey Tymofeiuk: Implemented by me
         return self.shift
 
     def get_encrypting_dict(self):
@@ -178,6 +182,7 @@ class PlaintextMessage(Message):
         
         Returns: a COPY of self.encrypting_dict
         '''
+        # Andrey Tymofeiuk: Implemented by me
         self.encrypting_dict = Message.build_shift_dict(self, self.shift)
         copy = self.encrypting_dict.copy()
         
@@ -189,6 +194,7 @@ class PlaintextMessage(Message):
         
         Returns: self.message_text_encrypted
         '''
+        # Andrey Tymofeiuk: Implemented by me
         return self.message_text_encrypted
 
     def change_shift(self, shift):
@@ -202,6 +208,7 @@ class PlaintextMessage(Message):
 
         Returns: nothing
         '''
+        # Andrey Tymofeiuk: Implemented by me
         self.shift = shift
         self.encrypting_dict = Message.build_shift_dict(self, shift)
         self.message_text_encrypted = Message.apply_shift(self, shift) 
@@ -218,6 +225,7 @@ class CiphertextMessage(Message):
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words)
         '''
+        # Andrey Tymofeiuk: Implemented by me
         self.valid_words = load_words(WORDLIST_FILENAME)
         self.message_text = text
 
@@ -237,6 +245,7 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
+        # Andrey Tymofeiuk: Implemented by me
         longest = 0
         sh_top = 0
         final_message = ''
@@ -268,6 +277,7 @@ ciphertext = CiphertextMessage('jgnnq')
 print('Expected Output:', (24, 'hello'))
 print('Actual Output:', ciphertext.decrypt_message())
 
+# Andrey Tymofeiuk: Implemented by me
 def decrypt_story():
     mystory = CiphertextMessage(get_story_string())
     return mystory.decrypt_message()
