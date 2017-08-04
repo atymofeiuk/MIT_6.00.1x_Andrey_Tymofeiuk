@@ -40,6 +40,7 @@ def hangman(secretWord):
 
     Follows the other limitations detailed in the problem write-up.
     '''
+    # Andrey Tymofeiuk: Several functions were specified earlier
     print("Welcome to the game Hangman!")
     print("I am thinking of a word that is " + str(len(secretWord)) + " letters long")
     print("-------------")
