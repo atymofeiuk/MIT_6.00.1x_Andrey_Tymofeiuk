@@ -4,7 +4,7 @@ Created on Sun Jul 30 22:14:31 2017
 
 MIT 6.00.1x course on edX.org: Final (Problem 7)
 
-Task: Classes Location and Campus are given. Write MITCampus class that meets the docstring specifications.
+Task: Classes Location and Campus are given. Write MITCampus class that meets the docstring specifications in the functions.
 
 Important: This code is placed at GitHub to track my progress in programming and
 to show my way of thinking. Also I will be happy if somebody will find my solution
