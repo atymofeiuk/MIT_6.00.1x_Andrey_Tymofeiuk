@@ -7,4 +7,4 @@ to show my way of thinking. Also I will be happy if somebody will find my soluti
 interesting. But I respect The Honor Code and I ask you to respect it also - please
 don't use these solutions to pass the MIT 6.00.1x course.
 
-(c) 2017 year
+(c) 2017
